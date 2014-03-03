@@ -1,0 +1,77 @@
+/***** Screen Bigger than 960px *****/
+@media only screen and (min-width:1200px) {
+
+
+}
+
+
+/***** Screen Bigger than 960px and less than 1200 *****/
+@media only screen and (max-width: 1199px) {
+
+
+}
+
+
+/***** Tablet (Smaller than 959px) *****/
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+    #hp_logo 									{ position:absolute; top:75px; left:130px; width:279px; height:403px; background:url(../imgs/site/hp_logo.png) no-repeat; background-size:100%; }
+    nav ul li									{ font-size:20px; }
+    .welcome_popup 								{ display: none; position: absolute;  width: 600px; height: 257px; border: 10px solid #fff; background-color: white; z-index:1002; overflow: auto; }
+    #hp_video									{ width:275px !important; height:150px !important; top:125px; left:530px; }
+    #hp_quote									{ font-size:18px; top:300px; left:480px; }
+    #meetdave_text									{ font-size:16px; top:150px; width:600px; line-height:14px; left:275px; }
+    #meetdave_moment_link						{ top:450px; left:275px; }
+    #dave_portrait								{ top:100px; width:300px; background-size:100%; left:-50px; }
+
+}
+
+
+
+
+
+/***** Phone (portrait 300px) *****/
+@media only screen and (max-width: 767px) {
+
+    #hp_logo 									{ position:absolute; top:55px; left:50%; margin-left:-80px; width:175px; height:403px; background:url(../imgs/site/hp_logo.png) no-repeat; background-size:100%; }
+    nav											{ text-align:left; margin-top:0; }
+    .welcome_popup 								{ display: none; position: absolute;  width: 300px; height: 257px; border: 10px solid #fff; background-color: white; z-index:1002; overflow: auto; left:50%;  }
+    #hp_video									{ display:none; }
+    #hp_quote									{ font-size:20px; top:315px; width:275px; left:50%; margin-left:-137px; }
+    #menu-icon									{ display:inline-block !important; z-index:12 !important; }
+	nav ul, nav:active ul 						{ display: none; position: absolute; padding: 20px; background: #e6097f; top: 32px;  width:250px; } 
+	nav li 										{ text-align: left; width: 100%; padding-top: 10px; margin: 0; border-bottom:1px solid #d8675e; } 
+	nav li a:hover 								{ text-align: left; width: 100%; padding-top: 10px; margin-top: -10px; background:#dc0f80; }
+	nav:hover ul 								{ display: block; }
+	.nav_fixed_element 							{ top:0; }
+	section										{ margin-top:0; }
+	#meetdave_text								{ font-size:14px; top:75px; width:80%; line-height:14px; left:25px; }
+    #meetdave_moment_link						{ top:475px; left:25px; }
+    #dave_portrait								{ display:none; } 
+    #meetdave_text h1							{ font-size:32px; }
+    #meetdave_text h3							{ font-size:20px; line-height:20px; }
+	
+	
+
+}
+
+
+/***** Phone (landscape 420px) *****/
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+    #hp_logo 									{ position:absolute; top:50px; left:150px; width:210px; height:403px; background:url(../imgs/site/hp_logo.png) no-repeat; background-size:100%; }
+    .welcome_popup 								{ display: none; position: absolute;  width: 600px; height: 257px; border: 10px solid #fff; background-color: white; z-index:1002; overflow: auto; }
+    #hp_video									{ display:block; width:275px !important; height:150px !important; top:50px; left:375px; }
+    #hp_quote									{ font-size:17px; top:220px; left:500px; width:300px !important; }
+    #menu-icon									{ display:inline-block !important; z-index:12 !important; }
+    #wrapper									{ height:110% !important; }    
+    #meetdave_text								{ font-size:14px; top:75px; width:450px; line-height:14px; left:250px; }
+    #meetdave_moment_link						{ top:375px; left:250px; }
+    #dave_portrait								{ top:65px; width:250px; background-size:100%; left:-20px; display:block; } 
+    #meetdave_text h1							{ font-size:32px; }
+    #meetdave_text h3							{ font-size:20px; line-height:20px; }
+
+}
+
+
+

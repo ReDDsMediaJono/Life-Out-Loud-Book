@@ -1,0 +1,891 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+    <title>LOL_v4 copy 2</title>
+    <style type="text/css">
+/*<![CDATA[*/
+    .s1 { color: #231F20; font-family:BigNoodleTitling; font-style: normal; font-weight: normal; text-decoration: none; font-size: 12pt; }
+    .s2 { color: #231F20; font-family:Calibri; font-style: normal; font-weight: normal; text-decoration: none; font-size: 9pt; }
+    .s3 { color: #231F20; font-family:BigNoodleTitling; font-style: normal; font-weight: normal; text-decoration: none; font-size: 24pt; }
+    .s4 { color: black; font-family:Arial; font-style: normal; font-weight: normal; text-decoration: none; font-size: 6pt; }
+    .a { color: #231F20; font-family:Calibri; font-style: normal; font-weight: normal; text-decoration: none; font-size: 9pt; }
+    .s5 { color: #231F20; font-family:Calibri; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10.5pt; }
+    .s6 { color: #030303; font-family:Arial; font-style: normal; font-weight: normal; text-decoration: none; font-size: 5.5pt; }
+    .s8 { color: #2A2A2A; font-family:Arial; font-style: normal; font-weight: normal; text-decoration: none; font-size: 6pt; }
+    .s9 { color: #030303; font-family:Arial; font-style: normal; font-weight: normal; text-decoration: none; font-size: 6pt; }
+    .p, p { color: #231F20; font-family:Calibri; font-style: normal; font-weight: normal; text-decoration: none; font-size: 11pt; margin:0pt; }
+    .s10 { color: #010101; font-family:Arial; font-style: normal; font-weight: normal; text-decoration: none; font-size: 5.5pt; }
+    .s11 { color: #010101; font-family:Arial; font-style: normal; font-weight: normal; text-decoration: none; font-size: 6pt; }
+    .s12 { color: #231F20; font-family:Calibri; font-style: italic; font-weight: normal; text-decoration: none; font-size: 11pt; }
+    .s14 { color: #231F20; font-family:BigNoodleTitling; font-style: normal; font-weight: normal; text-decoration: none; font-size: 30pt; }
+    .s15 { color: #231F20; font-family:"Times New Roman", serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 18pt; }
+    .s16 { color: #231F20; font-family:Calibri; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10pt; }
+    .s17 { color: #231F20; font-family:Calibri; font-style: italic; font-weight: normal; text-decoration: none; font-size: 10pt; }
+    .s18 { color: #231F20; font-family:"Times New Roman", serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10pt; }
+    .s19 { color: #2D2D2D; font-family:Arial; font-style: normal; font-weight: normal; text-decoration: none; font-size: 6pt; }
+    .s20 { color: #2D2D2D; font-family:Arial; font-style: normal; font-weight: normal; text-decoration: none; font-size: 8pt; }
+    h3 { color: #231F20; font-family:Calibri; font-style: normal; font-weight: bold; text-decoration: none; font-size: 11pt; }
+    .s23 { color: #2A2A2A; font-family:"Courier New", serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 9pt; }
+    .s24 { color: #0A0A0A; font-family:Arial; font-style: normal; font-weight: normal; text-decoration: none; font-size: 6pt; }
+    .s27 { color: #1D1D1D; font-family:Arial; font-style: normal; font-weight: normal; text-decoration: none; font-size: 6pt; }
+    .s28 { color: #FFF; font-family:Calibri; font-style: normal; font-weight: normal; text-decoration: none; font-size: 9pt; }
+    .s29 { color: #231F20; font-family:Calibri; font-style: normal; font-weight: normal; text-decoration: none; font-size: 14pt; }
+    .s30 { color: #2A2A2A; font-family:Arial; font-style: normal; font-weight: normal; text-decoration: none; font-size: 8pt; }
+    h1 { color: #231F20; font-family:"Times New Roman", serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 18pt; }
+    .s32 { color: #050505; font-family:Arial; font-style: normal; font-weight: normal; text-decoration: none; font-size: 6pt; }
+    .s35 { color: #212121; font-family:Arial; font-style: normal; font-weight: normal; text-decoration: none; font-size: 8pt; }
+    .s36 { color: black; font-family:"Times New Roman", serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10pt; }
+    .s37 { color: #231F1F; font-family:"Courier New", serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 9pt; }
+    h2 { color: black; font-family:Arial; font-style: normal; font-weight: bold; text-decoration: none; font-size: 12.5pt; }
+    .h4 { color: black; font-family:Arial; font-style: normal; font-weight: bold; text-decoration: none; font-size: 6.5pt; }
+    .s38 { color: black; font-family:"Times New Roman", serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 7pt; }
+    li {display: block; }
+    #l1 {padding-left: 0pt; }
+    #l1> li:before {content: "- "; color: #231F20; font-family:Calibri; font-style: normal; font-weight: normal; text-decoration: none; font-size: 11pt; }
+    #l2 {padding-left: 0pt; }
+    #l2> li:before {content: "• "; color: #231F20; font-family:Calibri; font-style: normal; font-weight: normal; text-decoration: none; font-size: 11pt; }
+    li {display: block; }
+    #l3 {padding-left: 0pt; }
+    #l3> li:before {content: "• "; color: #231F20; font-family:Calibri; font-style: normal; font-weight: normal; text-decoration: none; font-size: 11pt; }
+    /*]]>*/
+    </style>
+</head>
+
+<body>
+    <p style="text-indent: 0pt;text-align: left;"><span><img alt="image"
+    height="874" src="LOL_v4%20copy%202/Image_001.png" width=
+    "586" /></span></p>
+
+    <p style="text-indent: 0pt;line-height: 10pt;text-align: left;"><br /></p>
+
+    <p class="s1" style=
+    "padding-left: 5pt;text-indent: 0pt;text-align: center;">Chapter Title</p>
+
+    <p style="text-indent: 0pt;line-height: 6pt;text-align: left;"><br /></p>
+
+    <p class="s2" style="text-indent: 0pt;text-align: center;">1</p>
+
+    <p class="s3" style=
+    "padding-top: 4pt;padding-left: 153pt;text-indent: 0pt;text-align: center;">
+    DAVE BELL</p>
+
+    <p style="text-indent: 0pt;line-height: 8pt;text-align: left;"><br /></p>
+
+    <p class="s4" style=
+    "padding-top: 4pt;padding-left: 5pt;text-indent: 0pt;text-align: left;">
+    LOL_v3.indd 1 25/07/2013 12:55</p>
+
+    <p style="text-indent: 0pt;line-height: 8pt;text-align: left;"><br /></p>
+
+    <p class="s2" style=
+    "padding-top: 3pt;padding-left: 17pt;text-indent: 0pt;line-height: 11pt;text-align: left;">
+    River Publishing &amp; Media Ltd Barham Court</p>
+
+    <p class="s2" style=
+    "padding-left: 17pt;text-indent: 0pt;line-height: 11pt;text-align: left;">
+    Teston Maidstone Kent ME18 5BZ</p>
+
+    <p class="s2" style=
+    "padding-left: 17pt;text-indent: 0pt;line-height: 196%;text-align: left;">
+    <a class="a" href="mailto:info@river-publishing.co.uk" target=
+    "_blank">United Kingdom info@river-publishing.c</a>o.uk Copyright © Dave
+    Bell 2013</p>
+
+    <p class="s2" style=
+    "padding-left: 17pt;text-indent: 0pt;text-align: justify;">All rights
+    reserved. No part of this publication may be reproduced, stored in a
+    retrieval system, or transmitted in any form or by any means, electronic,
+    me- chanical, photocopying or otherwise, without the prior written consent
+    of the publisher. Short extracts may be used for review purposes.</p>
+
+    <p style="text-indent: 0pt;line-height: 10pt;text-align: left;"><br /></p>
+
+    <p class="s2" style=
+    "padding-left: 17pt;text-indent: 0pt;line-height: 11pt;text-align: justify;">
+    Scripture quotations are taken from The Holy Bible, New International
+    Version, NIV Copyright © 1973, 1978, 1984, 2011 by Biblica, Inc. Used by
+    permission. All rights reserved worldwide.</p>
+
+    <p style="text-indent: 0pt;line-height: 10pt;text-align: left;"><br /></p>
+
+    <p class="s2" style=
+    "padding-left: 17pt;text-indent: 0pt;text-align: left;">MSG - Copyright ©
+    1993, 1994, 1995, 1996, 2000, 2001, 2002 by Eugene H.</p>
+
+    <p class="s2" style=
+    "padding-left: 17pt;text-indent: 0pt;line-height: 11pt;text-align: left;">
+    Peterson.</p>
+
+    <p style="text-indent: 0pt;line-height: 10pt;text-align: left;"><br /></p>
+
+    <p class="s2" style=
+    "padding-left: 17pt;text-indent: 0pt;text-align: left;">ISBN
+    978-1-908393-34-0</p>
+
+    <p class="s2" style=
+    "padding-left: 17pt;text-indent: 0pt;line-height: 11pt;text-align: left;">
+    Printed in the United Kingdom</p>
+
+    <p style="text-indent: 0pt;line-height: 10pt;text-align: left;"><br /></p>
+
+    <p class="s2" style=
+    "padding-top: 3pt;padding-left: 118pt;text-indent: 0pt;text-align: center;">
+    2</p>
+
+    <p style="text-indent: 0pt;line-height: 10pt;text-align: left;"><br /></p>
+
+    <p class="s3" style=
+    "padding-top: 2pt;padding-left: 41pt;text-indent: 0pt;text-align: center;">
+    Contents</p>
+
+    <p class="s5" style=
+    "padding-top: 20pt;padding-left: 16pt;text-indent: 0pt;text-align: center;">
+    Dedication 5</p>
+
+    <p class="s5" style=
+    "padding-top: 9pt;padding-left: 16pt;text-indent: 0pt;text-align: center;">
+    Foreword 7</p>
+
+    <p class="s5" style=
+    "padding-top: 9pt;padding-left: 16pt;text-indent: 0pt;text-align: center;">
+    Introduction 9</p>
+
+    <p class="s5" style=
+    "padding-top: 9pt;padding-left: 16pt;text-indent: 0pt;text-align: center;">
+    Chapter 1 – Meet Dave 13</p>
+
+    <p class="s5" style=
+    "padding-top: 9pt;padding-left: 16pt;text-indent: 0pt;text-align: center;">
+    Chapter 2 – Words Frame Your World 21</p>
+
+    <p class="s5" style=
+    "padding-top: 9pt;padding-left: 16pt;text-indent: 0pt;text-align: center;">
+    Chapter 3 - Bad News 31</p>
+
+    <p class="s5" style=
+    "padding-top: 9pt;padding-left: 16pt;text-indent: 0pt;text-align: center;">
+    Chapter 4 - Change 41</p>
+
+    <p class="s5" style=
+    "padding-top: 9pt;padding-left: 16pt;text-indent: 0pt;text-align: center;">
+    Chapter 5 – Facing The Facts 55</p>
+
+    <p class="s5" style=
+    "padding-top: 9pt;padding-left: 16pt;text-indent: 0pt;text-align: center;">
+    Chapter 6 - Embracing The Truth 63</p>
+
+    <p class="s5" style=
+    "padding-top: 9pt;padding-left: 16pt;text-indent: 0pt;text-align: center;">
+    Chapter 7 - Prayer Out Loud 69</p>
+
+    <p class="s5" style=
+    "padding-top: 9pt;padding-left: 16pt;text-indent: 0pt;text-align: center;">
+    Chapter 8 - Wedding Bells 75</p>
+
+    <p class="s5" style=
+    "padding-top: 9pt;padding-left: 16pt;text-indent: 0pt;text-align: center;">
+    Chapter 9 - Miracles 83</p>
+
+    <p class="s5" style=
+    "padding-top: 9pt;padding-left: 16pt;text-indent: 0pt;text-align: center;">
+    Chapter 10 - Healing Is On Its Way 95</p>
+
+    <p class="s5" style=
+    "padding-top: 9pt;padding-left: 16pt;text-indent: 0pt;text-align: center;">
+    Chapter 11 - Preparation Time Is Not Wasted Time 105</p>
+
+    <p class="s5" style=
+    "padding-top: 9pt;padding-left: 16pt;text-indent: 0pt;text-align: center;">
+    Chapter 12 – Freedom Calls My Name 111</p>
+
+    <p class="s5" style=
+    "padding-top: 9pt;padding-left: 16pt;text-indent: 0pt;text-align: center;">
+    Chapter 13 - Investing In Local Church 119</p>
+
+    <p class="s5" style=
+    "padding-top: 9pt;padding-left: 16pt;text-indent: 0pt;text-align: center;">
+    Chapter 14 - Leading While Bleeding 125</p>
+
+    <p class="s5" style=
+    "padding-top: 9pt;padding-left: 16pt;text-indent: 0pt;text-align: center;">
+    Chapter 15 - Healthy Relationships 131</p>
+
+    <p class="s5" style=
+    "padding-top: 9pt;padding-left: 16pt;text-indent: 0pt;text-align: center;">
+    Chapter 16 - Longing For Monday Mornings 139</p>
+
+    <p class="s5" style=
+    "padding-top: 9pt;padding-left: 16pt;text-indent: 0pt;text-align: center;">
+    Photo Gallery 150-160</p>
+
+    <p class="s2" style=
+    "padding-top: 35pt;padding-left: 118pt;text-indent: 0pt;text-align: center;">
+    3</p>
+
+    <p style="text-indent: 0pt;line-height: 10pt;text-align: left;"><br /></p>
+
+    <p class="s6" style="padding-left: 5pt;text-indent: 0pt;text-align: left;">
+    L<span style=" color: #2A2A2A;">Q</span>_ <span style=
+    " color: #2A2A2A;">Y3mcl::J</span> 4 <span class="s8">25/0712013</span>
+    <span class="s9">1</span><span class="s8">255</span> <span class=
+    "s9">1</span></p>
+
+    <p style="text-indent: 0pt;line-height: 10pt;text-align: left;"><br /></p>
+
+    <p class="s3" style=
+    "padding-top: 2pt;padding-left: 153pt;text-indent: 0pt;text-align: center;">
+    Dedication</p>
+
+    <p style="text-indent: 0pt;line-height: 8pt;text-align: left;"><br /></p>
+
+    <p style="padding-left: 67pt;text-indent: 0pt;text-align: center;">Jesus
+    Christ, the Giver of this wonderful thing called life.</p>
+
+    <p style=
+    "padding-top: 3pt;padding-left: 67pt;text-indent: 0pt;text-align: center;">
+    Thank you, Jesus, for healing me.</p>
+
+    <p style="text-indent: 0pt;line-height: 10pt;text-align: left;"><br /></p>
+
+    <p style="text-indent: 0pt;text-align: left;"><span><img alt="image"
+    height="0" src="LOL_v4%20copy%202/Image_002.png" width="20" /></span></p>
+
+    <p style="text-indent: 0pt;line-height: 5pt;text-align: left;"><br /></p>
+
+    <p style="text-indent: 0pt;text-align: left;"><span><img alt="image"
+    height="0" src="LOL_v4%20copy%202/Image_003.png" width="19" /></span></p>
+
+    <p style="text-indent: 0pt;text-align: left;"><span><img alt="image"
+    height="20" src="LOL_v4%20copy%202/Image_004.png" width="0" /></span></p>
+
+    <p style="text-indent: 0pt;text-align: left;"><span><img alt="image"
+    height="20" src="LOL_v4%20copy%202/Image_005.png" width="0" /></span></p>
+
+    <p class="s4" style=
+    "padding-top: 4pt;padding-left: 5pt;text-indent: 0pt;text-align: left;">
+    LOL_v3.indd 5 25/07/2013 12:55</p>
+
+    <p style="text-indent: 0pt;line-height: 8pt;text-align: left;"><br /></p>
+
+    <p class="s10" style=
+    "padding-top: 4pt;padding-left: 5pt;text-indent: 0pt;text-align: left;">
+    L<span style=" color: #2A2A2A;">Q</span>_ <span style=
+    " color: #2A2A2A;">Y3mcl::J 6</span> <span class="s8">25/0712013</span>
+    <span class="s11">1</span><span class="s8">255</span> <span class=
+    "s11">1</span></p>
+
+    <p style="text-indent: 0pt;line-height: 10pt;text-align: left;"><br /></p>
+
+    <p class="s3" style=
+    "padding-top: 2pt;padding-left: 153pt;text-indent: 0pt;text-align: center;">
+    FOREWORD</p>
+
+    <p style="text-indent: 0pt;line-height: 8pt;text-align: left;"><br /></p>
+
+    <p style=
+    "padding-left: 51pt;text-indent: 0pt;line-height: 126%;text-align: justify;">
+    Dave and I first made contact following on from a forum for young leaders I
+    was involved in. I encouraged those gathered to drop me a line if they
+    wanted to, and to share their stories with me. Dave wrote to me and told me
+    some of his background and his remarkable story of God’s goodness to him
+    and his family. I was both deeply moved and profoundly encouraged by his
+    testimony and felt God impress upon me that here was a young man with a
+    distinct purpose in His plans.</p>
+
+    <p style=
+    "padding-left: 51pt;text-indent: 11pt;line-height: 126%;text-align: justify;">
+    Since then we have kept in touch. I keep a folder on my computer desktop
+    containing a number of Dave’s original worship songs and have shared these
+    with our worship leaders here at Saddleback. Dave has a gift for
+    communicating the life of God in an authentic way through his music. Now
+    he's doing the same in print.</p>
+
+    <p style=
+    "padding-left: 51pt;text-indent: 11pt;line-height: 126%;text-align: justify;">
+    The full version of Dave's journey towards complete healing from a rare and
+    aggressive form of cancer can be found in the book Mud In The Eye. But in
+    this book, Dave shares the lessons of faith that he and his family learnt
+    through that journey. Having been given a second chance at life, Dave has
+    determined to live it for all he is worth, according to God's purposes for
+    him. Years ago, the phrase Carpe Diem - Seize the day was popular. I think
+    I prefer Life Out Loud. It captures much better the truth that can live
+    with purpose for the long run.</p>
+
+    <p style=
+    "padding-left: 51pt;text-indent: 11pt;line-height: 126%;text-align: justify;">
+    This is a powerful story that reminds us that we serve a powerful God. I
+    commend to you both Dave's ministry and his inspirational message.</p>
+
+    <p class="s12" style=
+    "padding-left: 63pt;text-indent: 0pt;text-align: left;">Rick Warren,
+    Founder, Senior Pastor, Saddleback Church</p>
+
+    <p style="text-indent: 0pt;line-height: 10pt;text-align: left;"><br /></p>
+
+    <p class="s2" style=
+    "padding-top: 3pt;padding-left: 153pt;text-indent: 0pt;text-align: center;">
+    7</p>
+
+    <p style="text-indent: 0pt;line-height: 6pt;text-align: left;"><br /></p>
+
+    <p style="text-indent: 0pt;text-align: left;"><span><img alt="image"
+    height="0" src="LOL_v4%20copy%202/Image_006.png" width="20" /></span></p>
+
+    <p style="text-indent: 0pt;line-height: 5pt;text-align: left;"><br /></p>
+
+    <p style="text-indent: 0pt;text-align: left;"><span><img alt="image"
+    height="0" src="LOL_v4%20copy%202/Image_007.png" width="19" /></span></p>
+
+    <p style="text-indent: 0pt;text-align: left;"><span><img alt="image"
+    height="20" src="LOL_v4%20copy%202/Image_008.png" width="0" /></span></p>
+
+    <p style="text-indent: 0pt;text-align: left;"><span><img alt="image"
+    height="20" src="LOL_v4%20copy%202/Image_009.png" width="0" /></span></p>
+
+    <p class="s4" style=
+    "padding-top: 4pt;padding-left: 5pt;text-indent: 0pt;text-align: left;">
+    LOL_v3.indd 7 25/07/2013 12:55</p>
+
+    <p style="text-indent: 0pt;line-height: 8pt;text-align: left;"><br /></p>
+
+    <p class="s10" style=
+    "padding-top: 4pt;padding-left: 5pt;text-indent: 0pt;text-align: left;">
+    L<span style=" color: #2A2A2A;">Q</span>_ <span style=
+    " color: #2A2A2A;">Y3mcl::J</span> <span style=" color: #1A1A1A;">8</span>
+    <span class="s8">25/0712013</span> <span class="s11">1</span><span class=
+    "s8">255</span> <span class="s11">1</span></p>
+
+    <p style="text-indent: 0pt;line-height: 10pt;text-align: left;"><br /></p>
+
+    <p class="s14" style=
+    "padding-top: 2pt;padding-left: 98pt;text-indent: 0pt;text-align: left;">
+    INTRODUCTION</p>
+
+    <p style="text-indent: 0pt;line-height: 8pt;text-align: left;"><br /></p>
+
+    <p style=
+    "padding-left: 17pt;text-indent: 0pt;line-height: 126%;text-align: justify;">
+    Allow me to start by saying a huge thank you for taking time out of your
+    busy life to read this book. If allowed, I believe this book has the
+    potential to change your life. Okay, a grand and confident statement to
+    make in the opening few lines, I know, but I really do believe it. This
+    book is unique because every chapter is underpinned by a very real and
+    honest life story. It is the story of the loud, aggressive,
+    life-threatening cancer that tried to silence and put to rest the life of a
+    young boy, aged just</p>
+
+    <p style=
+    "padding-left: 17pt;text-indent: 0pt;line-height: 126%;text-align: justify;">
+    16. It is a story that charts life's mountaintop moments and also its deep
+    valley experiences. It is a story that has produced many nighttime tears,
+    but also proves that joy really does come in the morning. It is a story
+    that does not deny the facts of the diagnosis, but embraces the truth that
+    miracles do still happen today. This is actually my story and my name is
+    Dave.</p>
+
+    <p style=
+    "padding-left: 17pt;text-indent: 11pt;line-height: 126%;text-align: justify;">
+    So what is a <i>guide to living life out loud</i> all about? It is about
+    one thing: making the most of the rest of your life. Wherever you are
+    reading these words right now, we already have one thing in common: we're
+    both alive! We are both playing our</p>
+
+    <p style="text-indent: 0pt;line-height: 12pt;text-align: left;"><br /></p>
+
+    <p class="s2" style=
+    "padding-top: 3pt;padding-left: 41pt;text-indent: 0pt;text-align: center;">
+    9</p>
+
+    <p class="s1" style=
+    "padding-top: 3pt;padding-left: 97pt;text-indent: 0pt;text-align: left;">
+    Your Guide To Living LIFE OUT LOUD</p>
+
+    <p style="text-indent: 0pt;line-height: 12pt;text-align: left;"><br /></p>
+
+    <p style=
+    "padding-top: 3pt;padding-left: 17pt;text-indent: 0pt;line-height: 126%;text-align: justify;">
+    own individual parts in this amazing thing called life. Life is a gift.
+    Unfortunately this is not the dress rehearsal for it - it's the real thing.
+    This is the thing that scares me – not a fear of life, quite the opposite,
+    but a fear of not living. It has made me think. I imagine myself in my old
+    age, in the last stages of life, within moments of taking my final breath
+    here on planet earth, reminiscing on my journey up until this point. What
+    if the last thought I ever had was, "If only." If only I had made the most
+    of that opportunity . if only I had mended that broken relationship</p>
+
+    <p style=
+    "padding-left: 17pt;text-indent: 0pt;line-height: 126%;text-align: justify;">
+    . if only I had told that person that I loved them ... if only I had taken
+    a few more risks and not played my life so safely ... if only I had shared
+    my faith more ... if only I had turned the volume up in my life and lived
+    it a little louder . if only.</p>
+
+    <p style=
+    "padding-left: 17pt;text-indent: 11pt;line-height: 126%;text-align: justify;">
+    Having faced life and death issues at such a young age I now have a
+    perspective on life that some may not yet have. I hope to show you, through
+    the words and pictures in this book, that this weird and wonderful
+    experience called life is actually really incredible. Maybe as you hold
+    this book you’re already feeling a little frustrated because, at this
+    moment, for you life is more of a living nightmare than the adventure I've
+    alluded to. Maybe you’ve just received a serious diagnosis or some other
+    devastating news and currently life is throwing at you more questions than
+    answers. Maybe you are carrying hurts and disappointments. Maybe you just
+    feel weary and don't have the energy to progress or move forward.</p>
+
+    <p style=
+    "padding-left: 17pt;text-indent: 11pt;line-height: 126%;text-align: justify;">
+    If you fall into any of these categories you have picked up the right book.
+    I don't claim to have all the answers, but I may have the answer that you
+    are searching for. Your situation or perspective may not change overnight
+    but together, little by</p>
+
+    <p style="text-indent: 0pt;line-height: 14pt;text-align: left;"><br /></p>
+
+    <p class="s2" style=
+    "padding-top: 3pt;padding-left: 118pt;text-indent: 0pt;text-align: center;">
+    10</p>
+
+    <p class="s1" style=
+    "padding-top: 3pt;padding-left: 131pt;text-indent: 0pt;text-align: center;">
+    INTRODUCTION</p>
+
+    <p style="text-indent: 0pt;line-height: 5pt;text-align: left;"><br /></p>
+
+    <p style=
+    "padding-left: 17pt;text-indent: 0pt;line-height: 126%;text-align: justify;">
+    little, we can start to turn up the volume of your life so that you too can
+    begin to live life out loud. We can both make the decision right now to
+    change what our final thoughts in life will be. You may currently be on
+    course to carry the weight of many "If only's", but you can use this guide
+    to steer in a new direction - a direction that changes your "If only's"
+    into "What a wonderful life."</p>
+
+    <p style=
+    "padding-left: 17pt;text-indent: 11pt;line-height: 126%;text-align: justify;">
+    Our allotted time here on planet earth is so short. Think back to this time
+    last year. It's easy to look back and gasp, wondering where all the time
+    went and why it went so fast. I want to make each moment count; I want to
+    live each day as if it was my last. This passion I have for life - I
+    believe you can have it too.</p>
+
+    <p style=
+    "padding-left: 17pt;text-indent: 11pt;line-height: 126%;text-align: justify;">
+    If any of this introduction has stirred something inside of you or even
+    irritated you in some way, why not take on a new challenge with me? Let's
+    work together through this book to turn up the volume of your life.</p>
+
+    <p style="padding-left: 29pt;text-indent: 0pt;text-align: left;">Together,
+    lets' live LIFE OUT LOUD.</p>
+
+    <p class="s12" style=
+    "padding-top: 3pt;padding-left: 29pt;text-indent: 0pt;text-align: left;">
+    –Dave.</p>
+
+    <p style="text-indent: 0pt;line-height: 5pt;text-align: left;"><br /></p>
+
+    <p class="s2" style=
+    "padding-top: 3pt;padding-left: 118pt;text-indent: 0pt;text-align: center;">
+    11</p>
+
+    <p style="text-indent: 0pt;line-height: 8pt;text-align: left;"><br /></p>
+
+    <p class="s11" style=
+    "padding-top: 4pt;padding-left: 5pt;text-indent: 0pt;text-align: left;">
+    L<span style=" color: #2A2A2A;">Q</span>_ <span style=
+    " color: #2A2A2A;">Y3mcl::J</span> 1<span style=" color: #2A2A2A;">2
+    25/0712013</span> 1<span style=" color: #2A2A2A;">255</span> 1</p>
+
+    <p style="text-indent: 0pt;line-height: 10pt;text-align: left;"><br /></p>
+
+    <p class="s14" style=
+    "padding-top: 2pt;padding-left: 114pt;text-indent: 0pt;text-align: center;">
+    CHAPTER 1 MEET DAVE</p>
+
+    <p style="text-indent: 0pt;line-height: 10pt;text-align: left;"><br /></p>
+
+    <p style=
+    "padding-left: 17pt;text-indent: 0pt;line-height: 126%;text-align: justify;">
+    This is the part where we become friends. The reason why we need to be
+    friends before we continue is because, in the coming chapters, we have to
+    establish a few things that can only be established on the basis of
+    friendship. First of all, after reading this chapter, you will know that I
+    am relatively normal. I use the word "relatively" with caution. There is
+    nothing that special about me and I don't consider myself any different to
+    the majority of others reading this book.</p>
+
+    <p style=
+    "padding-left: 17pt;text-indent: 11pt;line-height: 126%;text-align: justify;">
+    Secondly, this book is written with honesty. Some of the thoughts and
+    experiences that are shared throughout it are very personal and still very
+    real to this day. These are thoughts and experiences I can only share with
+    people I can call my friends.</p>
+
+    <p style=
+    "padding-left: 17pt;text-indent: 11pt;line-height: 126%;text-align: justify;">
+    Thirdly, in places this book may offend those who are easily offended - not
+    intentionally, of course, but out of a desire to be genuinely open about
+    subjects that, for many, may be too close</p>
+
+    <p style="text-indent: 0pt;line-height: 11pt;text-align: left;"><br /></p>
+
+    <p class="s2" style=
+    "padding-top: 3pt;padding-left: 118pt;text-indent: 0pt;text-align: center;">
+    13</p>
+
+    <p class="s1" style=
+    "padding-top: 3pt;padding-left: 97pt;text-indent: 0pt;text-align: left;">
+    Your Guide To Living LIFE OUT LOUD</p>
+
+    <p style="text-indent: 0pt;line-height: 12pt;text-align: left;"><br /></p>
+
+    <p style=
+    "padding-top: 3pt;padding-left: 17pt;text-indent: 0pt;line-height: 126%;text-align: justify;">
+    to home. I hope though, that because of our new friendship, any offence
+    will be short lived and you'll still love me at the end of it. If you are
+    feeling that a commitment of this nature has come far too suddenly in our
+    newfound relationship, don't worry! You have until the end of this chapter
+    to decide if you would like to pursue this friendship or not.</p>
+
+    <p style=
+    "padding-left: 17pt;text-indent: 11pt;line-height: 126%;text-align: justify;">
+    So, I'll start with my birth and quickly bring you to the place where I
+    reach the age of 16. As the plot-spoiling title of this chapter suggests,
+    my name is Dave. It's not the coolest of names that could have been chosen
+    by my parents, Stuart and Irene, but nevertheless I suppose it is a solid
+    one. I'm trying to picture the scene when my father held me in his arms for
+    the very first time after the long hours of labour endured by Irene. He
+    gazes down into my newly formed face, lifts my tiny body and holds me in
+    the air (very similar to that moment in the Lion King) and says, "We shall
+    name him ... Dave!" Given the choice I would have gone for something like
+    "Wolf", "Jet" or "Zorro". It's funny thinking about it now, since baby
+    names in this day and age are considered un-cool if they are easy to
+    pronounce.</p>
+
+    <p style=
+    "padding-left: 17pt;text-indent: 11pt;line-height: 126%;text-align: justify;">
+    So little baby Dave arrived in this world on the 19th September 1986,
+    weighing 8lb 6oz. I was in a very blessed position to be born into a
+    Christian home. Not only that, but to have a father who is a church Pastor.
+    Stuart, my dad, had it in him to produce two more offspring in addition to
+    myself. The first of which was older brother, Andrew, followed by older
+    sister, Becki. I was the baby in the family by a good 10 years. Stuart and
+    Irene have assured me on many occasions me that I was in fact planned ...
+    anyway, moving on...</p>
+
+    <p style="padding-left: 29pt;text-indent: 0pt;text-align: left;">Being the
+    baby in the family did come with its benefits. Put</p>
+
+    <p style="text-indent: 0pt;line-height: 8pt;text-align: left;"><br /></p>
+
+    <p class="s2" style=
+    "padding-top: 3pt;padding-left: 109pt;text-indent: 0pt;text-align: center;">
+    14</p>
+
+    <p class="s1" style=
+    "padding-top: 3pt;padding-left: 143pt;text-indent: 0pt;text-align: center;">
+    MEET DAVE</p>
+
+    <p style="text-indent: 0pt;line-height: 5pt;text-align: left;"><br /></p>
+
+    <p style=
+    "padding-left: 17pt;text-indent: 0pt;line-height: 126%;text-align: justify;">
+    quite simply, I was the favourite. As Andrew and Becki were of a similar
+    age, it would usually be the both of them who got into disagreements rather
+    than me. I can remember one incredible moment that took place where I was
+    the sole witness in an argument between Andrew and Becki that took a turn
+    for the worst. Just before I paint the scene, it would be good for you to
+    know a little more about my siblings.</p>
+
+    <p style=
+    "padding-left: 17pt;text-indent: 11pt;line-height: 126%;text-align: justify;">
+    Let me start with Andrew. Andrew was the complete opposite to me. He was
+    the more academic of the two Bell boys. Andrew's recreational time would
+    consist of reading a large novel or some carrying out intense calligraphy
+    work. My extracurricular activities would have included dressing up in my
+    Superman outfit and jumping off our large garden wall. I think you see what
+    I mean. As for Becki, let's just say that at the time, she was a teenage
+    girl who knew very well how to use Andrew's more sensitive nature to her
+    advantage.</p>
+
+    <p style=
+    "padding-left: 17pt;text-indent: 11pt;line-height: 126%;text-align: justify;">
+    Right, back to the story. Andrew and Becki were immersed in a fully-fledged
+    argument that resulted in Andrew giving Becki a small clout to the back of
+    the head. Becki then used her initiative, playing to Andrew's more
+    compassionate nature, by pretending that this sudden blow has caused
+    instantaneous blindness. Andrew, with fist raised high, was now made to
+    feel responsible for inflicting a serious and life-changing disability on
+    his younger sister. One word sums up the privilege of witnessing this
+    historic act ... priceless!</p>
+
+    <p style=
+    "padding-left: 17pt;text-indent: 11pt;line-height: 126%;text-align: justify;">
+    Let's learn a little more about Becki. She has always been one to ask
+    questions. Whatever the subject, she is always keen to know every little
+    detail. What should be a five-minute conversation with Becki has the
+    tendency to last an hour due</p>
+
+    <p style="text-indent: 0pt;line-height: 14pt;text-align: left;"><br /></p>
+
+    <p class="s2" style=
+    "padding-top: 3pt;padding-left: 118pt;text-indent: 0pt;text-align: center;">
+    15</p>
+
+    <p class="s1" style=
+    "padding-top: 3pt;padding-left: 97pt;text-indent: 0pt;text-align: left;">
+    Your Guide To Living LIFE OUT LOUD</p>
+
+    <p style="text-indent: 0pt;line-height: 11pt;text-align: left;"><br /></p>
+
+    <p style=
+    "padding-top: 3pt;padding-left: 17pt;text-indent: 0pt;line-height: 126%;text-align: justify;">
+    to her intense interrogation. I am told that this was partially interesting
+    when Becki was given that certain "talk" that most parents have to have
+    with their children once they reach a particular age. I think you know the
+    one I mean - the sex talk. I am told that the amount of questioning that
+    resulted was well above the national average, compared to the chats that
+    both Andrew and me received. What was more disturbing to me was the level
+    of intrigue Becki had for the subject at hand. Part way through the talk my
+    sister made a request to my mother: "Mum, I think it would be good idea if
+    I watched you and Dad do it, so I know what it's all about." Outrageous,
+    but brilliant at the same time. Classic Becki.</p>
+
+    <p style=
+    "padding-left: 17pt;text-indent: 11pt;line-height: 126%;text-align: justify;">
+    Let's jump forward to when I was around 12 years old. It was at this point
+    in time when it became apparent that I had two main passions in life –
+    sport and music. My love of sport probably developed simply because I found
+    it difficult to sit still for longer than five minutes. My passion for
+    music was probably passed down from my Dad. He tells me that he was a
+    Christian rock star back in the day. I think the only part of that
+    statement this is true is that he was definitely a Christian. That's
+    possibly a little harsh</p>
+
+    <ul id="l1">
+        <li style=
+        "padding-left: 17pt;text-indent: 0pt;line-height: 126%;text-align: justify;">
+        <p style="display: inline;">he was part of a successful band called the
+        Advocates who produced many records and played at some very prestigious
+        venues.</p>
+
+            <p style=
+            "padding-left: 17pt;text-indent: 11pt;line-height: 126%;text-align: justify;">
+            Sports-wise, I played soccer for my local team and scored 34 goals
+            in my first season. I also loved playing rugby. It's a very
+            satisfying feeling throwing someone to the ground and inflicting a
+            little pain, all within the confines of "a game". Mum did not like
+            attending my rugby matches for obvious reasons.</p>
+
+            <p style="padding-left: 29pt;text-indent: 0pt;text-align: left;">
+            But music was by far my greater passion. My musical career</p>
+
+            <p style="text-indent: 0pt;line-height: 8pt;text-align: left;">
+            <br /></p>
+
+            <p class="s2" style=
+            "padding-top: 3pt;padding-left: 109pt;text-indent: 0pt;text-align: center;">
+            16</p>
+
+            <p class="s1" style=
+            "padding-top: 3pt;padding-left: 143pt;text-indent: 0pt;text-align: center;">
+            MEET DAVE</p>
+
+            <p style="text-indent: 0pt;line-height: 5pt;text-align: left;">
+            <br /></p>
+
+            <p style=
+            "padding-left: 17pt;text-indent: 0pt;line-height: 126%;text-align: justify;">
+            began by learning the drums kindly provided by Santa. How he
+            managed to get them down the chimney, I will never know, but they
+            arrived and, with sticks in hand, I set out to be a drummer. After
+            a few years of drumming I decided to place the sticks back on the
+            shelf and took up the guitar. My Granddad kindly donated his
+            acoustic guitar to get me started. I was pretty certain this
+            "instrument" had been crafted just shortly before the wheel, but it
+            seemed to work fine.</p>
+
+            <p style=
+            "padding-left: 17pt;text-indent: 11pt;line-height: 126%;text-align: justify;">
+            I would sit in front of the TV for hours watching Eric Clapton DVDs
+            whilst strumming my little guitar. A defining moment came when
+            watching the blockbuster hit <i>Back to the Future</i>. Remember
+            the part where Michael J Fox picks up the guitar and starts to play
+            <i>Johnny B Goode</i>? The determined character that I am would not
+            rest until I was able to play this for myself.</p>
+
+            <p style=
+            "padding-left: 17pt;text-indent: 11pt;line-height: 126%;text-align: justify;">
+            Soon I formed a band with some close friends. The band was named
+            <i>Anonymous</i>. It's a terrible name, I know, but it was
+            apparently the best we could all come up with. Eventually
+            <i>Anonymous</i> saw the light and decided a name change was in
+            order, so we later became known as <i>Flint</i>. A little better
+            but not exactly Coldplay. Flint began to attract a little following
+            within the local scene and even recorded an EP. We even reached the
+            heights of the local village carnival. After the departing of a few
+            band members another name change was inevitable. Flint then became
+            the mighty <i>Atlas</i>. We supported the likes of
+            <i>Delirious?</i> And, on one occasion, American superstar Little
+            Richard at a big charity event in London. My mum told me that we
+            were the best band in the whole world, so it must have been
+            true.</p>
+
+            <p style=
+            "padding-left: 17pt;text-indent: 11pt;line-height: 126%;text-align: justify;">
+            Let's move forward in time a little more. There were three things
+            to look forward to throughout the year in my personal</p>
+
+            <p style="text-indent: 0pt;line-height: 14pt;text-align: left;">
+            <br /></p>
+
+            <p class="s2" style=
+            "padding-top: 3pt;padding-left: 109pt;text-indent: 0pt;text-align: center;">
+            17</p>
+
+            <p class="s1" style=
+            "padding-top: 3pt;padding-left: 97pt;text-indent: 0pt;text-align: left;">
+            Your Guide To Living LIFE OUT LOUD</p>
+
+            <p style="text-indent: 0pt;line-height: 12pt;text-align: left;">
+            <br /></p>
+
+            <p style=
+            "padding-top: 3pt;padding-left: 17pt;text-indent: 0pt;line-height: 126%;text-align: justify;">
+            calendar: Christmas, my birthday and The One Event (formerly
+            Grapevine). It has to be said that Grapevine was the highlight of
+            my year. It was a large, family Bible weekend that took place every
+            year. I even think it was equal to, if not slightly better than
+            Christmas. I'm not suggesting that camping at a Christian festival
+            on an agricultural show ground for five days is on a par with the
+            birth of our Lord Jesus - but it does come pretty close! At the end
+            of each event I would go into a season of mourning, commonly known
+            as "the Grapevine Blues", which historically affected many people,
+            especially me and my friends. Waking up on the Wednesday morning
+            after the final night was the worst day in the year. Life just
+            didn't seem worth living any more. At one point I even had the
+            Samaritans on speed dial, just in case.</p>
+
+            <p style=
+            "padding-left: 17pt;text-indent: 11pt;line-height: 126%;text-align: justify;">
+            Throughout my teenage years it was apparent that I was a bit of a
+            practical joker and on most occasions I would cross the line in one
+            way or another. Youth weekends away would often prove this fact. On
+            one occasion I managed to conceal around ten different alarm clocks
+            in the youth leader's dormitory, all set at fifteen-minute
+            intervals starting at 3.00am. I found this prank really funny.
+            Somehow I don't think she did.</p>
+
+            <p style=
+            "padding-left: 17pt;text-indent: 11pt;line-height: 126%;text-align: justify;">
+            I remember another occasion at a cell group meeting where I may
+            have crossed the line again. As mentioned, I have trouble sitting
+            still for very long. I have to be active or doing something or I
+            tend to lose attentiveness. When it came to the prayer section of
+            the evening I decided to sneak out through the back door for some
+            fresh air. I saw a certain boy's bicycle lying there on the
+            driveway. Me being me, I couldn't just walk past it without causing
+            some sort of disruption to this innocent boy's journey home, so I
+            decided to climb up the side of the house, dragging</p>
+
+            <p style="text-indent: 0pt;line-height: 14pt;text-align: left;">
+            <br /></p>
+
+            <p class="s2" style=
+            "padding-top: 3pt;padding-left: 118pt;text-indent: 0pt;text-align: center;">
+            18</p>
+
+            <p class="s1" style=
+            "padding-top: 3pt;padding-left: 143pt;text-indent: 0pt;text-align: center;">
+            MEET DAVE</p>
+
+            <p style="text-indent: 0pt;line-height: 5pt;text-align: left;">
+            <br /></p>
+
+            <p style=
+            "padding-left: 17pt;text-indent: 0pt;line-height: 126%;text-align: justify;">
+            the bike with me, and put it on top of the roof. I walked home with
+            a grin on my face, wondering just how long it would take him to
+            find his bike. Ingenious! Shortly after arriving home, however, I
+            heard the phone ring. I could hear mum in the background,
+            apologising profusely for the fact her son had gone too far
+            again.</p>
+
+            <p style=
+            "padding-left: 17pt;text-indent: 11pt;line-height: 126%;text-align: justify;">
+            We're nearly up to date with the story. I hope after what you have
+            heard so far we are still friends? Throughout these years the local
+            church played a prominent role in my life. My parents educated and
+            imparted to me the importance of church and church attendance from
+            an early age. When having to make decisions such as playing for my
+            local soccer team on a Sunday morning or going to church, the
+            matter was clear cut and non- negotiable. Sometimes I would
+            question if church was really that important. Surely the odd game
+            of football wasn't much of an issue? But I believe God honoured my
+            decision to put local church first by lining up a team that played
+            the majority of its matches on a Sunday afternoon, meaning that
+            church was always attended.</p>
+
+            <p style=
+            "padding-left: 17pt;text-indent: 11pt;line-height: 126%;text-align: justify;">
+            Okay, now you know all the important stuff about me. It's official
+            - we're friends. Wahoo! At this point I would give you a rather
+            awkward, but warm embrace; maybe even a small kiss.</p>
+
+            <p style=
+            "padding-left: 17pt;text-indent: 11pt;line-height: 126%;text-align: justify;">
+            Our story has brought us from my birth up to the young age of 16.
+            Overall I was very content with life and rarely down. I had great
+            relationships with family and friends and kept church a priority
+            within my life. There was no room in my life for illness, struggle
+            or setback. I could never really entertain such an idea. Like most
+            16-year-old boys I also thought I was invincible and just presumed,
+            like many, that such things as a serious illness or a major setback
+            would not affect me. After all, I went to church,</p>
+
+            <p style="text-indent: 0pt;line-height: 14pt;text-align: left;">
+            <br /></p>
+
+            <p class="s2" style=
+            "padding-top: 3pt;padding-left: 109pt;text-indent: 0pt;text-align: center;">
+            19</p>
+
+            <p style="text-indent: 0pt;line-height: 12pt;text-align: left;">
+            <br /></p>
+
+            <p style=
+            "padding-top: 3pt;padding-left: 17pt;text-indent: 0pt;text-align: justify;">
+            I didn't drink, I didn't smoke, I didn't do drugs. What could</p>
+
+            <p style=
+            "padding-top: 3pt;padding-left: 17pt;text-indent: 0pt;text-align: justify;">
+            possibly happen to me?</p>
+
+            <p style=
+            "padding-top: 3pt;padding-left: 29pt;text-indent: 0pt;text-align: left;">
+            With Love,</p>
+
+            <p style=
+            "padding-top: 3pt;padding-left: 29pt;text-indent: 0pt;text-align: left;">
+            Your new friend, Wolf. Sorry, I mean Dave.</p>
+
+            <p style="text-indent: 0pt;line-height: 7pt;text-align: left;">
+            <br /></p>
+
+            <p style="padding-left: 17pt;text-indent: 0pt;text-align: left;">
+            <span><img alt="image" height="485" src=
+            "LOL_v4%20copy%202/Image_010.gif" width="379" /></span></p>
+
+            <p class="s2" style=
+            "padding-top: 3pt;padding-left: 17pt;text-indent: 0pt;line-height: 11pt;text-align: justify;">
+            Me at the age of 2. Not too happy with Irene's choice of clothing
+            for me on this particular day. The white bear wearing a bow tie is
+            enough, let alone a small wooden tambourine. Thanks Mum.</p>
+        </li>
+    </ul>
+</body>
+</html>
